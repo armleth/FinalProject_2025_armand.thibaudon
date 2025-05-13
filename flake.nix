@@ -1,11 +1,12 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
   outputs =
     {
+      self,
       nixpkgs,
       flake-utils,
     }:
@@ -19,6 +20,9 @@
             numpy
             matplotlib
             seaborn
+
+            notebook
+            ipykernel
           ]
         );
       in
@@ -27,6 +31,7 @@
         devShells.default = mkShell {
           buildInputs = [
             rs-python
+            jupyter-all
           ];
         };
       }
