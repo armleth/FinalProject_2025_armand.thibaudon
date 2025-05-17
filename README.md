@@ -2,7 +2,7 @@
 
 Project Assignment: Short Video Recommender System (KuaiRec)
 
-Student: Charles-Antoine LEGER - Major SCIA - Promotion 2026
+Student: Armand THIBAUDON - Major SCIA - Promotion 2026
 
 ### About this Repository
 
@@ -22,3 +22,11 @@ We present notebooks in order of reading:
 3. `content_based_basic.ipynb`: Basic Content-Based (cosine similarity) recommender system
 4. `content_based_ltr.ipynb`: Learning-to-Rank recommender system
 5. `collaborative_als.ipynb`: Collaborative-Based (ALS) recommender system
+
+### Development environnment
+
+If you have nix installed with flakes, you can run:
+```
+nix develop
+```
+at the root of the project, and this will create a development shell with all needed dependencies installed.
